@@ -28,6 +28,8 @@ namespace Getting_User_Input
             Thread.Sleep(milliseconds);
             Console.WriteLine("Just a few questions....");
             Thread.Sleep(milliseconds);
+            
+            
             Console.WriteLine("whats your name?");
             string name = Console.ReadLine();
 
@@ -42,6 +44,8 @@ namespace Getting_User_Input
             Console.WriteLine("whats your email? we promise we wont sell your info to marketers....;) ");
             string email = Console.ReadLine();
 
+
+            Loop:
             Thread.Sleep(milliseconds);
             Console.WriteLine("Thanks,  lets confirm your info ");
 
@@ -51,6 +55,7 @@ namespace Getting_User_Input
             Console.WriteLine("age: " + age);
             Console.WriteLine("email: " + email);
 
+          
             Console.WriteLine("Correct? please type y/n");
             string confirmation = Console.ReadLine();
 
@@ -66,11 +71,30 @@ namespace Getting_User_Input
             
             {
                 string message = "Sorry im usually a good listener... lets try again";
-                  Console.WriteLine(message);  
-                    
-                    }
+                  Console.WriteLine(message);
 
-            
+
+                Console.WriteLine("whats your name?");
+                string wrongname = Console.ReadLine();
+
+                Thread.Sleep(milliseconds);
+                Console.WriteLine(name + ", How old are you?");
+                string wrongage = Console.ReadLine();
+
+              
+
+                Thread.Sleep(milliseconds);
+                Console.WriteLine("whats your email?");
+                string wrongemail = Console.ReadLine();
+
+                goto Loop;
+
+
+
+
+            }
+
+
 
 
 
