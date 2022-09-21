@@ -36,7 +36,7 @@ namespace Getting_User_Input
             string age = Console.ReadLine();
 
             Thread.Sleep(milliseconds);
-            Console.WriteLine("damn! " + age + "? Youre old as fuck, " + name);
+            Console.WriteLine("damn! " + age + "? Youre old as hell, " + name);
 
             Thread.Sleep(milliseconds);
             Console.WriteLine("whats your email? we promise we wont sell your info to marketers....;) ");
